@@ -1,0 +1,31 @@
+Food.java
+// Basisklasse für alle Lebensmittelarten
+class Food {
+    private String name;
+    
+    public Food(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    // TODO: Überschreibe toString(), um den Namen des Lebensmittels zurückzugeben
+    @Override
+    public String toString() {
+        return getName();
+    }
+}
+// TODO: Erstelle die Klasse Meat, die Food erweitert
+class Meat extends Food {
+    public Meat(String name) {
+        super(name);
+    }
+}
+// TODO: Erstelle die Klasse Vegetable, die Food erweitert
+class Vegetable extends Food{
+    public Vegetable(String name) {
+        super(name);
+    }
+}
